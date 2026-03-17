@@ -1,0 +1,32 @@
+class Sistema_Hospital:
+    def __init__(self):
+        pass
+class Paciente:
+    
+    def reservar_cita():
+        #no se puedene reservar fachas anteriores
+    def registrar_paciente():
+        #nombre, edad, número, correo(opcional), peso, altura, calcular imc, 
+    
+    def llamar_siguiente():
+    
+    def paciente_anterior():
+            
+class Cola_Prioridad:
+    def prioridad_medica():
+        #niveles de prioridad
+        #prioridad ñor fecha de ingreso
+    def fecha_ingreso():
+        #tiene que tener una hora de entrada y salida        
+class Departamento:
+#pediatria, cardiologia, ginecologia,etc.    
+
+class Gestor_Estadistica:
+    def tiempo_promedio():
+    # tiempo de espera = hora de atencion - hora de regsitro
+    #generer promedio
+    def base_de_datos():    
+    #json
+class Notificacion:
+    def  notificaion_del_paciente():
+    #print(f"NOTIFICACIÓN: Paciente {nombre}, por favor acuda a su consultorio.")
