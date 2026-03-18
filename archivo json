@@ -1,0 +1,19 @@
+from datetime import datetime
+import json
+datos ={
+    "Npmbre": "",
+    "Fecha": datetime.now().isoformat(),
+    "Edad": 25,
+    "Genero": "",
+    "Nacionalidad": "",
+    "Estado Civil": "",
+    "Telefono": 6641234567,
+    "Correo": "",
+    "Estatura": 1.45,
+    "Peso- Kg": 40.8, 
+    "IMC": 19.405
+}
+
+with open("datos.json", "w") as archivo:
+    json.dump(datos, archivo, indent=4)
+print("Archivo JSON creado")
