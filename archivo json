@@ -1,19 +1,24 @@
 from datetime import datetime
 import json
-datos ={
-    "Npmbre": "",
-    "Fecha": datetime.now().isoformat(),
-    "Edad": 25,
-    "Genero": "",
-    "Nacionalidad": "",
-    "Estado Civil": "",
-    "Telefono": 6641234567,
-    "Correo": "",
-    "Estatura": 1.45,
-    "Peso- Kg": 40.8, 
-    "IMC": 19.405
-}
+datos = {}
 
+datos["Npmbre" ] = input("Ingrese el nombre del paciente")
+datos["Fecha"] = datetime.now().isoformat()
+datos["Edad"] = input("ingrese la edad del paciente")
+datos["Genero"] = input("ingrese el genero del paciente")
+datos["Nacionalidad"] = input("Ingrese la nacionalidad del paciente")
+datos["Estado Civil"] = input ("Ingrese el estado civil del paciente")
+datos["Telefono"] = input("Ingrese un numero de telefono")
+datos["Correo"] = input("Ingrese un correo:")
+    
+peso = float(input("Ingrese el peso del paciente el Kg"))
+estatura = float(input("Ingrese la estatura del paciente un cm"))
+    
+datos["Estatura"] = estatura
+datos["Peso- Kg" ]= peso
+    
+datos["IMC"] = peso / (estatura ** 2)
+    
 with open("datos.json", "w") as archivo:
     json.dump(datos, archivo, indent=4)
 print("Archivo JSON creado")
